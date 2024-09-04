@@ -1,0 +1,43 @@
+@import '../../Common/color.scss';
+
+.movie-card{
+    background-color: $secondary-color;
+    
+    height: 300px;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+     
+   
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ 
+
+.movie-img-container{
+    height: 65%;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 10px;
+
+}
+.movie-img-container img{
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+}
+.movie-info{
+    padding: 5px;
+    height: calc(300px - 65%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+.movie-img-container img:hover{
+    scale: 1.1;
+    transition: all ease-in 170ms;
+
+}

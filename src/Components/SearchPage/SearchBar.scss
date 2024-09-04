@@ -1,0 +1,41 @@
+@import '../../Common/color.scss';
+
+.form{
+    display: flex;
+    gap: 5px;
+
+    .inputTag{
+         padding: 5px 5px;
+         border-radius: 7px;
+         outline: none;
+         border: 1px solid black;
+
+        
+
+    }
+    @media(max-width:768px){
+        display: none;
+    }
+ 
+}
+.SearchBtn{
+    padding: 5px 7px;
+     
+    background-color:  $btn-color;
+    border: none;
+    color: $font-primary;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+     
+
+     
+}
+.SearchBtn:hover{
+    background-color: #0b6fce;
+    cursor: pointer;
+    transition: all 200ms;
+    
+}
