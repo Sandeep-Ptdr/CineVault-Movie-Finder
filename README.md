@@ -1,4 +1,4 @@
-# Movie Finder
+# CineVault 
 
 A responsive movie searching application built with React.js, SCSS, and Tailwind CSS, powered by the OMDb API.
 
@@ -12,7 +12,6 @@ A responsive movie searching application built with React.js, SCSS, and Tailwind
 ## Tech Stack
 
 - **Frontend**: React.js, SCSS, Tailwind CSS
-- **State Management**: Redux Toolkit
 - **API**: OMDb API
 
 ## Installation
