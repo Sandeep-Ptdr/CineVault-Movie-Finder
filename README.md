@@ -36,7 +36,7 @@ A responsive movie searching application built with React.js, SCSS, and Tailwind
 
 ## Deployment
 
-The app is deployed on Vercel. You can view the live version [here](#).
+The app is deployed on Vercel. You can view the live version [here](https://cinevault-movie-finder.vercel.app).
 
 ## Contributing
 
