@@ -7,7 +7,7 @@ import HomeBg from '../../assets/HomeBg.jpg'
 import SearchBar from '../SearchPage/SearchBar'
 
 
-   
+
 
 function MovieListing() {
 
@@ -48,9 +48,10 @@ function MovieListing() {
   let renderMessage = "";
 
   if (!title) {
-    renderMessage = <div className='bg-Img' style={{backgroundImage:`url(${HomeBg})`}}>  <h1 className='Heading'>Search Your Favorite Movies or Series here...</h1>
-     
-     
+
+    renderMessage = <div className='bg-Img' style={{ backgroundImage: `url(${HomeBg})` }}>  <h1 className='Heading'>Search Your Favorite Movies or Series here...</h1>
+
+
     </div>
   }
 
@@ -68,7 +69,7 @@ function MovieListing() {
     renderMessage = <h3 className='messages'>{`Error Fetching Data : ${Error.message}`}</h3>
 
   }
-  
+
 
 
 
@@ -86,7 +87,7 @@ function MovieListing() {
 
   return (
     <>
-{/* 
+      {/* 
 <div className='phone-searchBar'> <div>
   <SearchBar/>
   
@@ -100,15 +101,16 @@ function MovieListing() {
 
 
 
-          <div className='movie-list'>   
-          <div>{renderMessage}</div>
+          <div className='movie-list'>
 
-           
+            <div>{renderMessage}</div>
 
-          <div>
-          { moviedata.totalResults && <h2>{`We've found ${moviedata.totalResults} results for ${title}`}</h2>}
-            <div className='movieCard-container'>{renderMovies}</div>
-          </div> 
+
+
+            <div>
+              {moviedata.totalResults && !Loading && <h2>{`We've found ${moviedata.totalResults} results for ${title}`}</h2>}
+              <div className='movieCard-container'>{renderMovies}</div>
+            </div>
 
           </div>
 
