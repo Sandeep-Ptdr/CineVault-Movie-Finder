@@ -8,12 +8,13 @@ function SeriesListing() {
 
   const { imdbID, season} = useParams()
  
-  console.log(imdbID, season, "seriesid amd season")
-  const  {moviedata, Loading, Error} = useMovieData({ movieid: imdbID, season: season })
+  // console.log(imdbID, season, "seriesid and season")
+
+  const  {moviedata} = useMovieData({ movieid: imdbID, season: season })
 
   const Navigate = useNavigate()
 
-  console.log(moviedata, "season data with episodes")
+  // console.log(moviedata, "season data with episodes")
 
 
  

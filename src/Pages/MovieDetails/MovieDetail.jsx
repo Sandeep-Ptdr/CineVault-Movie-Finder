@@ -6,7 +6,7 @@ import { APIKEY } from '../../Common/apis/MovieApikey'
 import { FaStar, FaThumbsUp } from "react-icons/fa6";
 import { MdLocalMovies } from "react-icons/md";
 import { SlCalender } from "react-icons/sl";
-import SeriesListing from '../../Components/SeriesListing/SeriesListing'
+// import SeriesListing from '../../Components/SeriesListing/SeriesListing'
 
 
 function MovieDetail() {
@@ -21,14 +21,14 @@ function MovieDetail() {
     const fetchMovieInfo = async () => {
 
       const response = await MovieApi.get(`?i=${imdbID}&apikey=${APIKEY}`)
-      console.log("movie detail", response.data)
+      // console.log("movie detail", response.data)
       setMovieInfo(response.data)
 
     }
     fetchMovieInfo()
 
   }, [imdbID])
-  console.log(imdbID,"imdbidddddddd")
+  // console.log(imdbID,"imdbidddddddd")
 
 
   if(movieInfo.length <= 0) return <div className='loader-Wraper'> <div className='loader'></div> </div>

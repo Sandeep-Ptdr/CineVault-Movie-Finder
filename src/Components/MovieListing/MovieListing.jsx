@@ -4,7 +4,7 @@ import { useMovieData } from '../../Common/apis/useMovieData'
 import MovieCard from '../MovieCard/MovieCard'
 import './MovieListing.scss'
 import HomeBg from '../../assets/HomeBg.jpg'
-import SearchBar from '../SearchPage/SearchBar'
+ 
 
 
 
@@ -17,7 +17,7 @@ function MovieListing() {
 
   const { moviedata, Loading, Error } = useMovieData({ movie: title, currentpage: page })
 
-  console.log(moviedata, "moviedataaaaaaaaa")
+  // console.log(moviedata, "moviedataaaaaaaaa")
 
   const currentPage = Number(page)
 
@@ -87,11 +87,7 @@ function MovieListing() {
 
   return (
     <>
-      {/* 
-<div className='phone-searchBar'> <div>
-  <SearchBar/>
-  
-  </div>  </div> */}
+      
       {
         <div className='movies-wraper'>
 

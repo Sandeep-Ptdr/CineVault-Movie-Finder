@@ -16,7 +16,7 @@ function EpisodeDetail() {
   const {moviedata} = useMovieData({season:season, episode:episodeID,movieid:imdbID})
   
  
-console.log(moviedata,"moviedataaaaaa")
+// console.log(moviedata,"moviedataaaaaa")
  
 
 
